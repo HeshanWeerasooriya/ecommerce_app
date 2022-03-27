@@ -32,7 +32,9 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
       iconTheme: const IconThemeData(color: Colors.black),
       actions: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/wishlist');
+          },
           icon: const Icon(Icons.favorite),
         )
       ],

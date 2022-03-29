@@ -4,13 +4,16 @@ import '../models/product_model.dart';
 
 class ProductCard extends StatelessWidget {
   final Product product;
+  final double widthFactor;
   const ProductCard({
     Key? key,
     required this.product,
+    required this.widthFactor,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final double widthValue = MediaQuery.of(context).size.width / widthFactor!;
     return Stack(
       children: [
         Container(

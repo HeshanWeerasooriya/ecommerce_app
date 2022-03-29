@@ -17,15 +17,13 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
           color: Colors.black,
           padding: const EdgeInsets.symmetric(
             horizontal: 20,
-            vertical: 8,
+            vertical: 10,
           ),
           child: Text(
             title,
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-                fontFamily: 'Avenir',
-                fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.headline3!.copyWith(
+                  color: Colors.white,
+                ),
           ),
         ),
       ),
@@ -42,5 +40,5 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(50.0);
+  Size get preferredSize => const Size.fromHeight(60.0);
 }

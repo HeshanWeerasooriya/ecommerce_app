@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../widgets/custom_appbar.dart';
 import '../../widgets/custom_navbar.dart';
 import '../../widgets/hero_caraosel_card.dart';
+import '../../widgets/section_title.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -21,16 +22,21 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(title: 'YouBay'),
-      body: CarouselSlider(
-        options: CarouselOptions(
-          aspectRatio: 1.5,
-          viewportFraction: 0.9,
-          enlargeCenterPage: true,
-          enlargeStrategy: CenterPageEnlargeStrategy.height,
-        ),
-        items: Category.categories
-            .map((Category) => HeroCarouselCard(category: Category))
-            .toList(),
+      body: Column(
+        children: [
+          CarouselSlider(
+            options: CarouselOptions(
+              aspectRatio: 1.5,
+              viewportFraction: 0.9,
+              enlargeCenterPage: true,
+              enlargeStrategy: CenterPageEnlargeStrategy.height,
+            ),
+            items: Category.categories
+                .map((Category) => HeroCarouselCard(category: Category))
+                .toList(),
+          ),
+          SectionTitle(title: 'RECOMMENDED')
+        ],
       ),
       bottomNavigationBar: CustomNavBar(),
     );

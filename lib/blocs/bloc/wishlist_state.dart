@@ -17,8 +17,6 @@ class WishlistLoaded extends WishlistState {
 
   const WishlistLoaded({required this.products});
 
-  //const WishlistLoaded({ this.wishList = WishList(products)});
-
   @override
   List<Object> get props => [products];
 }

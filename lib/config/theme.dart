@@ -28,12 +28,12 @@ ThemeData myTheme() {
       ),
       headline5: TextStyle(
         color: Colors.black,
-        fontSize: 12,
+        fontSize: 14,
         fontWeight: FontWeight.bold,
       ),
       headline6: TextStyle(
         color: Colors.black,
-        fontSize: 14,
+        fontSize: 12,
         fontWeight: FontWeight.normal,
       ),
       bodyText1: TextStyle(

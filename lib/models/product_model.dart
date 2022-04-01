@@ -28,7 +28,7 @@ class Product extends Equatable {
       ];
 
   static List<Product> products = [
-    const Product(
+    Product(
       name: 'Soft Drink #1',
       category: 'Soft Drinks',
       imageUrl:
@@ -37,7 +37,7 @@ class Product extends Equatable {
       isRecommended: true,
       isPopular: false,
     ),
-    const Product(
+    Product(
       name: 'Soft Drink #2',
       category: 'Soft Drinks',
       imageUrl:
@@ -46,7 +46,7 @@ class Product extends Equatable {
       isRecommended: false,
       isPopular: true,
     ),
-    const Product(
+    Product(
       name: 'Soft Drink #3',
       category: 'Soft Drinks',
       imageUrl:
@@ -55,7 +55,7 @@ class Product extends Equatable {
       isRecommended: true,
       isPopular: false,
     ),
-    const Product(
+    Product(
       name: 'Smoothies #1',
       category: 'Smoothies',
       imageUrl:
@@ -64,7 +64,7 @@ class Product extends Equatable {
       isRecommended: false,
       isPopular: true,
     ),
-    const Product(
+    Product(
       name: 'Smoothies #2',
       category: 'Smoothies',
       imageUrl:
